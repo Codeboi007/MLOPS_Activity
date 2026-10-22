@@ -1,0 +1,45 @@
+{
+  "project": "customer-churn-mlops",
+  "model_version": "logisticregression_20261022T100048Z",
+  "created_utc": "20261022T100048Z",
+  "random_seed": 42,
+  "dataset_source": "Kaggle: blastchar/telco-customer-churn",
+  "rows_after_cleaning": 7043,
+  "selected_model": "LogisticRegression",
+  "metrics": {
+    "accuracy": 0.7381121362668559,
+    "precision": 0.504302925989673,
+    "recall": 0.7834224598930482,
+    "f1": 0.6136125654450262,
+    "roc_auc": 0.8412978893797307
+  },
+  "quality_gate": {
+    "metric": "f1",
+    "minimum": 0.5,
+    "measured": 0.6136125654450262,
+    "passed": true
+  },
+  "numeric_features": [
+    "SeniorCitizen",
+    "tenure",
+    "MonthlyCharges",
+    "TotalCharges"
+  ],
+  "categorical_features": [
+    "gender",
+    "Partner",
+    "Dependents",
+    "PhoneService",
+    "MultipleLines",
+    "InternetService",
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies",
+    "Contract",
+    "PaperlessBilling",
+    "PaymentMethod"
+  ]
+}
